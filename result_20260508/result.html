@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>2026/05/07予測 答え合わせ</title>
+<style>
+  body { font-family: "Meiryo", "Yu Gothic", "Noto Sans CJK JP", sans-serif; margin: 24px; background: #f7f7f7; color: #222; }
+  h1 { margin: 0 0 8px; font-size: 24px; }
+  .summary { display: flex; gap: 12px; flex-wrap: wrap; margin: 14px 0 18px; }
+  .card { background: white; border: 1px solid #ddd; border-radius: 10px; padding: 10px 14px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .card strong { font-size: 20px; }
+  table { border-collapse: collapse; width: 100%; background: white; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+  th, td { border: 1px solid #ddd; padding: 8px 9px; text-align: right; vertical-align: top; white-space: nowrap; }
+  th { background: #222; color: white; cursor: pointer; user-select: none; position: sticky; top: 0; z-index: 1; }
+  th:hover { background: #444; }
+  td:nth-child(2), th:nth-child(2), td:nth-child(4), th:nth-child(4), td:nth-child(5), th:nth-child(5), td:nth-child(6), th:nth-child(6), td:nth-child(7), th:nth-child(7), td:nth-child(8), th:nth-child(8) { text-align: left; }
+  a { color: #0b63ce; font-weight: 700; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  tr.hit { background: #fff; }
+  tr.miss { background: #eeeeee; color: #444; }
+  tr.even { background: #fff7df; }
+  tr.nodata { background: #f0e0e0; }
+</style>
+</head>
+<body>
+<h1>2026/05/07予測 → 2026/05/08実績 答え合わせ</h1>
+<p>保存フォルダ名は予測基準日ベースです。台番クリックで予測時のチャート画像を開きます。</p>
+
+<div class="summary">
+  <div class="card">全体的中率<br><strong>39.8%</strong><br>33/83</div>
+  <div class="card">TOP5<br><strong>80.0%</strong></div>
+  <div class="card">TOP10<br><strong>70.0%</strong></div>
+  <div class="card">TOP20<br><strong>45.0%</strong></div>
+</div>
+
+<table id="resultTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0, 'num')">順位</th>
+      <th onclick="sortTable(1, 'num')">台番</th>
+      <th onclick="sortTable(2, 'num')">予測確率</th>
+      <th>信頼度</th>
+      <th>タイプ</th>
+      <th>計算方法</th>
+      <th>実結果</th>
+      <th>的中</th>
+      <th onclick="sortTable(8, 'num')">始値</th>
+      <th onclick="sortTable(9, 'num')">終値</th>
+      <th onclick="sortTable(10, 'num')">差分</th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr class="hit">
+          <td data-sort="1">1</td>
+          <td data-sort="158"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/158.png" target="_blank">158</a></td>
+          <td data-sort="68.5000">68.5%</td>
+          <td>高</td>
+          <td>順張り寄り</td>
+          <td>全体陽線率 / n=10</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="44920.0000">44,920</td>
+          <td data-sort="57301.0000">57,301</td>
+          <td data-sort="12381.0000">12,381</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="2">2</td>
+          <td data-sort="110"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/110.png" target="_blank">110</a></td>
+          <td data-sort="61.7500">61.8%</td>
+          <td>高</td>
+          <td>順張り寄り</td>
+          <td>陽線2連続後 / n=16</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="260549.0000">260,549</td>
+          <td data-sort="283951.0000">283,951</td>
+          <td data-sort="23402.0000">23,402</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="3">3</td>
+          <td data-sort="58"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/58.png" target="_blank">58</a></td>
+          <td data-sort="61.1700">61.2%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線6連続後 / n=6</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-380545.0000">-380,545</td>
+          <td data-sort="-370357.0000">-370,357</td>
+          <td data-sort="10188.0000">10,188</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="4">4</td>
+          <td data-sort="148"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/148.png" target="_blank">148</a></td>
+          <td data-sort="61.1700">61.2%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線5連続後 / n=6</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-457439.0000">-457,439</td>
+          <td data-sort="-476546.0000">-476,546</td>
+          <td data-sort="-19107.0000">-19,107</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="5">5</td>
+          <td data-sort="113"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/113.png" target="_blank">113</a></td>
+          <td data-sort="60.0500">60.0%</td>
+          <td>高</td>
+          <td>順張り寄り</td>
+          <td>陽線1連続後 / n=33</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="200672.0000">200,672</td>
+          <td data-sort="211987.0000">211,987</td>
+          <td data-sort="11315.0000">11,315</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="6">6</td>
+          <td data-sort="118"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/118.png" target="_blank">118</a></td>
+          <td data-sort="56.8300">56.8%</td>
+          <td>低〜中</td>
+          <td>反発狙い</td>
+          <td>陰線3連続後 / n=12</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="31479.0000">31,479</td>
+          <td data-sort="14907.0000">14,907</td>
+          <td data-sort="-16572.0000">-16,572</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="7">7</td>
+          <td data-sort="70"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/70.png" target="_blank">70</a></td>
+          <td data-sort="56.7200">56.7%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=82</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-940.0000">-940</td>
+          <td data-sort="8967.0000">8,967</td>
+          <td data-sort="9907.0000">9,907</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="8">8</td>
+          <td data-sort="111"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/111.png" target="_blank">111</a></td>
+          <td data-sort="55.3500">55.4%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陽線2連続後 / n=13</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-423326.0000">-423,326</td>
+          <td data-sort="-425359.0000">-425,359</td>
+          <td data-sort="-2033.0000">-2,033</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="9">9</td>
+          <td data-sort="57"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/57.png" target="_blank">57</a></td>
+          <td data-sort="53.7700">53.8%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線2連続後 / n=44</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-65622.0000">-65,622</td>
+          <td data-sort="-45894.0000">-45,894</td>
+          <td data-sort="19728.0000">19,728</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="10">10</td>
+          <td data-sort="69"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/69.png" target="_blank">69</a></td>
+          <td data-sort="52.9500">53.0%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線後 / n=137</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="310601.0000">310,601</td>
+          <td data-sort="312185.0000">312,185</td>
+          <td data-sort="1584.0000">1,584</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="11">11</td>
+          <td data-sort="116"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/116.png" target="_blank">116</a></td>
+          <td data-sort="51.9300">51.9%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=28</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-177500.0000">-177,500</td>
+          <td data-sort="-186979.0000">-186,979</td>
+          <td data-sort="-9479.0000">-9,479</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="12">12</td>
+          <td data-sort="66"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/66.png" target="_blank">66</a></td>
+          <td data-sort="51.6500">51.6%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=78</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-172183.0000">-172,183</td>
+          <td data-sort="-156944.0000">-156,944</td>
+          <td data-sort="15239.0000">15,239</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="13">13</td>
+          <td data-sort="117"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/117.png" target="_blank">117</a></td>
+          <td data-sort="51.6500">51.6%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=39</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-101471.0000">-101,471</td>
+          <td data-sort="-94663.0000">-94,663</td>
+          <td data-sort="6808.0000">6,808</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="14">14</td>
+          <td data-sort="119"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/119.png" target="_blank">119</a></td>
+          <td data-sort="47.8100">47.8%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線2連続後 / n=26</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-375772.0000">-375,772</td>
+          <td data-sort="-382911.0000">-382,911</td>
+          <td data-sort="-7139.0000">-7,139</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="15">15</td>
+          <td data-sort="52"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/52.png" target="_blank">52</a></td>
+          <td data-sort="47.1200">47.1%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=65</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-317450.0000">-317,450</td>
+          <td data-sort="-323312.0000">-323,312</td>
+          <td data-sort="-5862.0000">-5,862</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="16">16</td>
+          <td data-sort="48"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/48.png" target="_blank">48</a></td>
+          <td data-sort="47.1100">47.1%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=72</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-306330.0000">-306,330</td>
+          <td data-sort="-307441.0000">-307,441</td>
+          <td data-sort="-1111.0000">-1,111</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="17">17</td>
+          <td data-sort="63"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/63.png" target="_blank">63</a></td>
+          <td data-sort="47.0600">47.1%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=77</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-110940.0000">-110,940</td>
+          <td data-sort="-123287.0000">-123,287</td>
+          <td data-sort="-12347.0000">-12,347</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="18">18</td>
+          <td data-sort="49"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/49.png" target="_blank">49</a></td>
+          <td data-sort="46.3900">46.4%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陰線2連続後 / n=45</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-107291.0000">-107,291</td>
+          <td data-sort="-130828.0000">-130,828</td>
+          <td data-sort="-23537.0000">-23,537</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="19">19</td>
+          <td data-sort="152"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/152.png" target="_blank">152</a></td>
+          <td data-sort="45.4000">45.4%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=41</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="27793.0000">27,793</td>
+          <td data-sort="23633.0000">23,633</td>
+          <td data-sort="-4160.0000">-4,160</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="20">20</td>
+          <td data-sort="59"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/59.png" target="_blank">59</a></td>
+          <td data-sort="45.1700">45.2%</td>
+          <td>低〜中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=75</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-324858.0000">-324,858</td>
+          <td data-sort="-333061.0000">-333,061</td>
+          <td data-sort="-8203.0000">-8,203</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="21">21</td>
+          <td data-sort="129"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/129.png" target="_blank">129</a></td>
+          <td data-sort="44.8900">44.9%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=33</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-49857.0000">-49,857</td>
+          <td data-sort="-37415.0000">-37,415</td>
+          <td data-sort="12442.0000">12,442</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="22">22</td>
+          <td data-sort="56"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/56.png" target="_blank">56</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=68</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-56861.0000">-56,861</td>
+          <td data-sort="-38357.0000">-38,357</td>
+          <td data-sort="18504.0000">18,504</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="23">23</td>
+          <td data-sort="61"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/61.png" target="_blank">61</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線5連続後 / n=8</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-13566.0000">-13,566</td>
+          <td data-sort="-17372.0000">-17,372</td>
+          <td data-sort="-3806.0000">-3,806</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="24">24</td>
+          <td data-sort="156"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/156.png" target="_blank">156</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td>低〜中</td>
+          <td>中立</td>
+          <td>全体陽線率 / n=10</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="1758.0000">1,758</td>
+          <td data-sort="-30350.0000">-30,350</td>
+          <td data-sort="-32108.0000">-32,108</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="25">25</td>
+          <td data-sort="39"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/39.png" target="_blank">39</a></td>
+          <td data-sort="44.0000">44.0%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陰線2連続後 / n=40</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-93460.0000">-93,460</td>
+          <td data-sort="-109187.0000">-109,187</td>
+          <td data-sort="-15727.0000">-15,727</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="26">26</td>
+          <td data-sort="51"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/51.png" target="_blank">51</a></td>
+          <td data-sort="43.9700">44.0%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=73</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="46577.0000">46,577</td>
+          <td data-sort="42275.0000">42,275</td>
+          <td data-sort="-4302.0000">-4,302</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="27">27</td>
+          <td data-sort="53"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/53.png" target="_blank">53</a></td>
+          <td data-sort="43.3400">43.3%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=74</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-34787.0000">-34,787</td>
+          <td data-sort="-29247.0000">-29,247</td>
+          <td data-sort="5540.0000">5,540</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="28">28</td>
+          <td data-sort="35"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/35.png" target="_blank">35</a></td>
+          <td data-sort="42.7800">42.8%</td>
+          <td>低</td>
+          <td>反発狙い</td>
+          <td>陰線3連続後 / n=29</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-101800.0000">-101,800</td>
+          <td data-sort="-105960.0000">-105,960</td>
+          <td data-sort="-4160.0000">-4,160</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="29">29</td>
+          <td data-sort="72"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/72.png" target="_blank">72</a></td>
+          <td data-sort="42.6400">42.6%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線2連続後 / n=35</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="241682.0000">241,682</td>
+          <td data-sort="237593.0000">237,593</td>
+          <td data-sort="-4089.0000">-4,089</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="30">30</td>
+          <td data-sort="131"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/131.png" target="_blank">131</a></td>
+          <td data-sort="42.3400">42.3%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=38</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="62725.0000">62,725</td>
+          <td data-sort="59770.0000">59,770</td>
+          <td data-sort="-2955.0000">-2,955</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="31">31</td>
+          <td data-sort="77"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/77.png" target="_blank">77</a></td>
+          <td data-sort="42.3300">42.3%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=69</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-368555.0000">-368,555</td>
+          <td data-sort="-357522.0000">-357,522</td>
+          <td data-sort="11033.0000">11,033</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="32">32</td>
+          <td data-sort="75"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/75.png" target="_blank">75</a></td>
+          <td data-sort="42.2500">42.2%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=80</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-18633.0000">-18,633</td>
+          <td data-sort="-2811.0000">-2,811</td>
+          <td data-sort="15822.0000">15,822</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="33">33</td>
+          <td data-sort="64"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/64.png" target="_blank">64</a></td>
+          <td data-sort="41.8600">41.9%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線3連続後 / n=11</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-185176.0000">-185,176</td>
+          <td data-sort="-186145.0000">-186,145</td>
+          <td data-sort="-969.0000">-969</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="34">34</td>
+          <td data-sort="130"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/130.png" target="_blank">130</a></td>
+          <td data-sort="40.7900">40.8%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=34</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-143707.0000">-143,707</td>
+          <td data-sort="-145669.0000">-145,669</td>
+          <td data-sort="-1962.0000">-1,962</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="35">35</td>
+          <td data-sort="45"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/45.png" target="_blank">45</a></td>
+          <td data-sort="40.5200">40.5%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陰線2連続後 / n=41</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-178317.0000">-178,317</td>
+          <td data-sort="-167143.0000">-167,143</td>
+          <td data-sort="11174.0000">11,174</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="36">36</td>
+          <td data-sort="42"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/42.png" target="_blank">42</a></td>
+          <td data-sort="40.1800">40.2%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=81</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="144040.0000">144,040</td>
+          <td data-sort="146050.0000">146,050</td>
+          <td data-sort="2010.0000">2,010</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="37">37</td>
+          <td data-sort="115"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/115.png" target="_blank">115</a></td>
+          <td data-sort="40.1700">40.2%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=36</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-114199.0000">-114,199</td>
+          <td data-sort="-121764.0000">-121,764</td>
+          <td data-sort="-7565.0000">-7,565</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="38">38</td>
+          <td data-sort="109"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/109.png" target="_blank">109</a></td>
+          <td data-sort="39.8800">39.9%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=32</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-280816.0000">-280,816</td>
+          <td data-sort="-286253.0000">-286,253</td>
+          <td data-sort="-5437.0000">-5,437</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="39">39</td>
+          <td data-sort="71"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/71.png" target="_blank">71</a></td>
+          <td data-sort="39.6900">39.7%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線後 / n=117</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-193441.0000">-193,441</td>
+          <td data-sort="-181140.0000">-181,140</td>
+          <td data-sort="12301.0000">12,301</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="40">40</td>
+          <td data-sort="132"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/132.png" target="_blank">132</a></td>
+          <td data-sort="39.1200">39.1%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=32</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-193503.0000">-193,503</td>
+          <td data-sort="-194188.0000">-194,188</td>
+          <td data-sort="-685.0000">-685</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="41">41</td>
+          <td data-sort="37"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/37.png" target="_blank">37</a></td>
+          <td data-sort="39.0400">39.0%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=74</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-182459.0000">-182,459</td>
+          <td data-sort="-185485.0000">-185,485</td>
+          <td data-sort="-3026.0000">-3,026</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="42">42</td>
+          <td data-sort="121"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/121.png" target="_blank">121</a></td>
+          <td data-sort="38.8300">38.8%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線後 / n=57</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-15716.0000">-15,716</td>
+          <td data-sort="8910.0000">8,910</td>
+          <td data-sort="24626.0000">24,626</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="43">43</td>
+          <td data-sort="153"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/153.png" target="_blank">153</a></td>
+          <td data-sort="38.5000">38.5%</td>
+          <td>低〜中</td>
+          <td>反発狙い</td>
+          <td>陰線3連続後 / n=15</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="290942.0000">290,942</td>
+          <td data-sort="276764.0000">276,764</td>
+          <td data-sort="-14178.0000">-14,178</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="44">44</td>
+          <td data-sort="67"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/67.png" target="_blank">67</a></td>
+          <td data-sort="38.1200">38.1%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=71</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-489514.0000">-489,514</td>
+          <td data-sort="-498639.0000">-498,639</td>
+          <td data-sort="-9125.0000">-9,125</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="45">45</td>
+          <td data-sort="47"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/47.png" target="_blank">47</a></td>
+          <td data-sort="37.5200">37.5%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陰線2連続後 / n=41</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-210630.0000">-210,630</td>
+          <td data-sort="-215145.0000">-215,145</td>
+          <td data-sort="-4515.0000">-4,515</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="46">46</td>
+          <td data-sort="137"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/137.png" target="_blank">137</a></td>
+          <td data-sort="37.5200">37.5%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=41</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-347805.0000">-347,805</td>
+          <td data-sort="-347994.0000">-347,994</td>
+          <td data-sort="-189.0000">-189</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="47">47</td>
+          <td data-sort="133"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/133.png" target="_blank">133</a></td>
+          <td data-sort="37.3600">37.4%</td>
+          <td>低</td>
+          <td>反発狙い</td>
+          <td>陰線4連続後 / n=7</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-37986.0000">-37,986</td>
+          <td data-sort="-49488.0000">-49,488</td>
+          <td data-sort="-11502.0000">-11,502</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="48">48</td>
+          <td data-sort="136"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/136.png" target="_blank">136</a></td>
+          <td data-sort="37.3600">37.4%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線2連続後 / n=21</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-309962.0000">-309,962</td>
+          <td data-sort="-307098.0000">-307,098</td>
+          <td data-sort="2864.0000">2,864</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="49">49</td>
+          <td data-sort="76"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/76.png" target="_blank">76</a></td>
+          <td data-sort="37.2300">37.2%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=73</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-217472.0000">-217,472</td>
+          <td data-sort="-233050.0000">-233,050</td>
+          <td data-sort="-15578.0000">-15,578</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="50">50</td>
+          <td data-sort="36"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/36.png" target="_blank">36</a></td>
+          <td data-sort="37.0800">37.1%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=76</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-86443.0000">-86,443</td>
+          <td data-sort="-83937.0000">-83,937</td>
+          <td data-sort="2506.0000">2,506</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="51">51</td>
+          <td data-sort="74"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/74.png" target="_blank">74</a></td>
+          <td data-sort="36.7500">36.8%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線2連続後 / n=32</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="12349.0000">12,349</td>
+          <td data-sort="12019.0000">12,019</td>
+          <td data-sort="-330.0000">-330</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="52">52</td>
+          <td data-sort="123"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/123.png" target="_blank">123</a></td>
+          <td data-sort="35.8000">35.8%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陰線1連続後 / n=33</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-329474.0000">-329,474</td>
+          <td data-sort="-339708.0000">-339,708</td>
+          <td data-sort="-10234.0000">-10,234</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="53">53</td>
+          <td data-sort="120"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/120.png" target="_blank">120</a></td>
+          <td data-sort="35.5500">35.5%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=95</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-9860.0000">-9,860</td>
+          <td data-sort="-18063.0000">-18,063</td>
+          <td data-sort="-8203.0000">-8,203</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="54">54</td>
+          <td data-sort="40"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/40.png" target="_blank">40</a></td>
+          <td data-sort="34.5000">34.5%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=70</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="87797.0000">87,797</td>
+          <td data-sort="90943.0000">90,943</td>
+          <td data-sort="3146.0000">3,146</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="55">55</td>
+          <td data-sort="46"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/46.png" target="_blank">46</a></td>
+          <td data-sort="33.5800">33.6%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=174</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-366345.0000">-366,345</td>
+          <td data-sort="-335800.0000">-335,800</td>
+          <td data-sort="30545.0000">30,545</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="56">56</td>
+          <td data-sort="149"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/149.png" target="_blank">149</a></td>
+          <td data-sort="33.0000">33.0%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=40</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="6381.0000">6,381</td>
+          <td data-sort="21076.0000">21,076</td>
+          <td data-sort="14695.0000">14,695</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="57">57</td>
+          <td data-sort="54"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/54.png" target="_blank">54</a></td>
+          <td data-sort="32.9600">33.0%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=26</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-256653.0000">-256,653</td>
+          <td data-sort="-247527.0000">-247,527</td>
+          <td data-sort="9126.0000">9,126</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="58">58</td>
+          <td data-sort="108"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/108.png" target="_blank">108</a></td>
+          <td data-sort="32.9600">33.0%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=13</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-212762.0000">-212,762</td>
+          <td data-sort="-196095.0000">-196,095</td>
+          <td data-sort="16667.0000">16,667</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="59">59</td>
+          <td data-sort="50"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/50.png" target="_blank">50</a></td>
+          <td data-sort="32.8600">32.9%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=73</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-245093.0000">-245,093</td>
+          <td data-sort="-253438.0000">-253,438</td>
+          <td data-sort="-8345.0000">-8,345</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="60">60</td>
+          <td data-sort="68"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/68.png" target="_blank">68</a></td>
+          <td data-sort="32.6000">32.6%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=21</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-57440.0000">-57,440</td>
+          <td data-sort="-32610.0000">-32,610</td>
+          <td data-sort="24830.0000">24,830</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="61">61</td>
+          <td data-sort="73"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/73.png" target="_blank">73</a></td>
+          <td data-sort="32.1600">32.2%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=77</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-158849.0000">-158,849</td>
+          <td data-sort="-178518.0000">-178,518</td>
+          <td data-sort="-19669.0000">-19,669</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="62">62</td>
+          <td data-sort="43"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/43.png" target="_blank">43</a></td>
+          <td data-sort="32.0000">32.0%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線5連続後 / n=8</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-177393.0000">-177,393</td>
+          <td data-sort="-172416.0000">-172,416</td>
+          <td data-sort="4977.0000">4,977</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="63">63</td>
+          <td data-sort="38"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/38.png" target="_blank">38</a></td>
+          <td data-sort="31.8300">31.8%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線1連続後 / n=84</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-204353.0000">-204,353</td>
+          <td data-sort="-203974.0000">-203,974</td>
+          <td data-sort="379.0000">379</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="64">64</td>
+          <td data-sort="155"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/155.png" target="_blank">155</a></td>
+          <td data-sort="31.5000">31.5%</td>
+          <td>低〜中</td>
+          <td>弱トレンド</td>
+          <td>全体陽線率 / n=10</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-120247.0000">-120,247</td>
+          <td data-sort="-136256.0000">-136,256</td>
+          <td data-sort="-16009.0000">-16,009</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="65">65</td>
+          <td data-sort="34"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/34.png" target="_blank">34</a></td>
+          <td data-sort="30.8600">30.9%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=22</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-62988.0000">-62,988</td>
+          <td data-sort="-61474.0000">-61,474</td>
+          <td data-sort="1514.0000">1,514</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="66">66</td>
+          <td data-sort="151"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/151.png" target="_blank">151</a></td>
+          <td data-sort="30.7800">30.8%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=113</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-101848.0000">-101,848</td>
+          <td data-sort="-103597.0000">-103,597</td>
+          <td data-sort="-1749.0000">-1,749</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="67">67</td>
+          <td data-sort="41"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/41.png" target="_blank">41</a></td>
+          <td data-sort="30.5000">30.5%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線3連続後 / n=12</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-336617.0000">-336,617</td>
+          <td data-sort="-346238.0000">-346,238</td>
+          <td data-sort="-9621.0000">-9,621</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="68">68</td>
+          <td data-sort="128"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/128.png" target="_blank">128</a></td>
+          <td data-sort="30.4000">30.4%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=39</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-246936.0000">-246,936</td>
+          <td data-sort="-257170.0000">-257,170</td>
+          <td data-sort="-10234.0000">-10,234</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="69">69</td>
+          <td data-sort="112"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/112.png" target="_blank">112</a></td>
+          <td data-sort="29.7900">29.8%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=34</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-327401.0000">-327,401</td>
+          <td data-sort="-328653.0000">-328,653</td>
+          <td data-sort="-1252.0000">-1,252</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="70">70</td>
+          <td data-sort="114"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/114.png" target="_blank">114</a></td>
+          <td data-sort="29.3800">29.4%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=86</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-157743.0000">-157,743</td>
+          <td data-sort="-147555.0000">-147,555</td>
+          <td data-sort="10188.0000">10,188</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="71">71</td>
+          <td data-sort="65"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/65.png" target="_blank">65</a></td>
+          <td data-sort="29.1700">29.2%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陽線1連続後 / n=75</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-323880.0000">-323,880</td>
+          <td data-sort="-313973.0000">-313,973</td>
+          <td data-sort="9907.0000">9,907</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="72">72</td>
+          <td data-sort="150"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/150.png" target="_blank">150</a></td>
+          <td data-sort="28.9800">29.0%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線2連続後 / n=29</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-490666.0000">-490,666</td>
+          <td data-sort="-496812.0000">-496,812</td>
+          <td data-sort="-6146.0000">-6,146</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="73">73</td>
+          <td data-sort="154"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/154.png" target="_blank">154</a></td>
+          <td data-sort="27.8300">27.8%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=6</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-97681.0000">-97,681</td>
+          <td data-sort="-97775.0000">-97,775</td>
+          <td data-sort="-94.0000">-94</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="74">74</td>
+          <td data-sort="122"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/122.png" target="_blank">122</a></td>
+          <td data-sort="27.3200">27.3%</td>
+          <td>高</td>
+          <td>中立</td>
+          <td>陽線後 / n=55</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-149074.0000">-149,074</td>
+          <td data-sort="-152596.0000">-152,596</td>
+          <td data-sort="-3522.0000">-3,522</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="75">75</td>
+          <td data-sort="134"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/134.png" target="_blank">134</a></td>
+          <td data-sort="27.1500">27.1%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線後 / n=98</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-285325.0000">-285,325</td>
+          <td data-sort="-294024.0000">-294,024</td>
+          <td data-sort="-8699.0000">-8,699</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="76">76</td>
+          <td data-sort="157"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/157.png" target="_blank">157</a></td>
+          <td data-sort="25.5000">25.5%</td>
+          <td>低〜中</td>
+          <td>中立</td>
+          <td>陰線後 / n=5</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-75257.0000">-75,257</td>
+          <td data-sort="-83814.0000">-83,814</td>
+          <td data-sort="-8557.0000">-8,557</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="77">77</td>
+          <td data-sort="44"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/44.png" target="_blank">44</a></td>
+          <td data-sort="25.2700">25.3%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線4連続後 / n=13</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="68019.0000">68,019</td>
+          <td data-sort="54024.0000">54,024</td>
+          <td data-sort="-13995.0000">-13,995</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="78">78</td>
+          <td data-sort="147"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/147.png" target="_blank">147</a></td>
+          <td data-sort="23.0700">23.1%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線1連続後 / n=42</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-164957.0000">-164,957</td>
+          <td data-sort="-165997.0000">-165,997</td>
+          <td data-sort="-1040.0000">-1,040</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="79">79</td>
+          <td data-sort="55"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/55.png" target="_blank">55</a></td>
+          <td data-sort="21.1700">21.2%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=15</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-63187.0000">-63,187</td>
+          <td data-sort="-68695.0000">-68,695</td>
+          <td data-sort="-5508.0000">-5,508</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="80">80</td>
+          <td data-sort="62"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/62.png" target="_blank">62</a></td>
+          <td data-sort="19.7900">19.8%</td>
+          <td>中</td>
+          <td>中立</td>
+          <td>陽線4連続後 / n=7</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-289119.0000">-289,119</td>
+          <td data-sort="-291648.0000">-291,648</td>
+          <td data-sort="-2529.0000">-2,529</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="81">81</td>
+          <td data-sort="135"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/135.png" target="_blank">135</a></td>
+          <td data-sort="15.5500">15.6%</td>
+          <td>低</td>
+          <td>弱トレンド</td>
+          <td>陰線2連続後 / n=19</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-71968.0000">-71,968</td>
+          <td data-sort="-60935.0000">-60,935</td>
+          <td data-sort="11033.0000">11,033</td>
+        </tr>
+        
+        <tr class="miss">
+          <td data-sort="82">82</td>
+          <td data-sort="146"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/146.png" target="_blank">146</a></td>
+          <td data-sort="14.5000">14.5%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線5連続後 / n=5</td>
+          <td>陰線</td>
+          <td>外れ</td>
+          <td data-sort="-282937.0000">-282,937</td>
+          <td data-sort="-285750.0000">-285,750</td>
+          <td data-sort="-2813.0000">-2,813</td>
+        </tr>
+        
+        <tr class="hit">
+          <td data-sort="83">83</td>
+          <td data-sort="60"><a href="C:/kota/pachi_tools_v2/csv_candle/chart_output/prediction_20260508/images/60.png" target="_blank">60</a></td>
+          <td data-sort="5.0000">5.0%</td>
+          <td>低</td>
+          <td>反発狙い・要注意</td>
+          <td>陰線3連続後 / n=22</td>
+          <td>陽線</td>
+          <td>的中</td>
+          <td data-sort="-404713.0000">-404,713</td>
+          <td data-sort="-391567.0000">-391,567</td>
+          <td data-sort="13146.0000">13,146</td>
+        </tr>
+        </tbody>
+</table>
+
+<script>
+let sortState = {};
+function getCellValue(row, col) {
+  const cell = row.children[col];
+  const sortValue = cell.getAttribute("data-sort");
+  return sortValue !== null ? sortValue : cell.innerText;
+}
+function sortTable(col, type) {
+  const table = document.getElementById("resultTable");
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+  const key = col + "_" + type;
+  const asc = !sortState[key];
+  sortState = {};
+  sortState[key] = asc;
+  rows.sort((a, b) => {
+    let av = getCellValue(a, col);
+    let bv = getCellValue(b, col);
+    if (type === "num") {
+      av = parseFloat(String(av).replace(/,/g, "").replace("%", ""));
+      bv = parseFloat(String(bv).replace(/,/g, "").replace("%", ""));
+      if (isNaN(av)) av = -Infinity;
+      if (isNaN(bv)) bv = -Infinity;
+      return asc ? av - bv : bv - av;
+    }
+    return asc ? String(av).localeCompare(String(bv), "ja") : String(bv).localeCompare(String(av), "ja");
+  });
+  rows.forEach(row => tbody.appendChild(row));
+}
+</script>
+</body>
+</html>
