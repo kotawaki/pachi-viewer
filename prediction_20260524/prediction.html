@@ -1,0 +1,1083 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>2026/05/24 陽線確率ランキング</title>
+<style>
+  body {
+    font-family: "Meiryo", "Yu Gothic", "Noto Sans CJK JP", sans-serif;
+    margin: 24px;
+    background: #f7f7f7;
+    color: #222;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+  }
+  .sub {
+    margin: 0 0 18px;
+    color: #555;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 9px 10px;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  th {
+    background: #222;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  th:hover { background: #444; }
+
+  td:nth-child(1), th:nth-child(1),
+  td:nth-child(3), th:nth-child(3),
+  td:nth-child(4), th:nth-child(4),
+  td:nth-child(6), th:nth-child(6),
+  td:nth-child(7), th:nth-child(7) {
+    text-align: left;
+  }
+
+  a {
+    color: #0b63ce;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+
+  tr.rel-high { background: #fff; }
+  tr.rel-mid { background: #fffdf2; }
+  tr.rel-lowmid { background: #eeeeee; }
+  tr.rel-low { background: #dedede; color: #444; }
+
+  .badge {
+    display: inline-block;
+    min-width: 52px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #bbb;
+  }
+  .badge.rel-high { background: #ffffff; }
+  .badge.rel-mid { background: #fff3bf; }
+  .badge.rel-lowmid { background: #d9d9d9; }
+  .badge.rel-low { background: #bfbfbf; }
+
+  .legend {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0 16px;
+    font-size: 13px;
+  }
+  .legend span {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+  }
+  .note {
+    margin-top: 14px;
+    color: #666;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<h1>2026/05/24 陽線確率ランキング</h1>
+<p class="sub">初期表示は陽線確率が高い順です。ヘッダーの「台番」「陽線確率」「信頼度」をクリックするとソートできます。台番クリックでチャート画像を開きます。</p>
+
+<div class="legend">
+  <span>白：信頼度 高</span>
+  <span style="background:#fffdf2;">薄黄：信頼度 中</span>
+  <span style="background:#eeeeee;">グレー：低〜中 / 反発狙い</span>
+  <span style="background:#dedede;">濃グレー：低 / 要注意</span>
+</div>
+
+<table id="rankTable">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0, 'num')">台番</th>
+      <th onclick="sortTable(1, 'num')">陽線確率</th>
+      <th onclick="sortTable(2, 'num')">信頼度</th>
+      <th>タイプ</th>
+      <th>基準終値</th>
+      <th>計算方法</th>
+      <th>サポートライン</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+        <tr class="rel-lowmid">
+          <td data-sort="73"><a href="images/73.png" target="_blank">73</a></td>
+          <td data-sort="76.5000">76.5%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-211948.0000">-211,948</td>
+          <td>陽線3連続後 / n=8</td>
+          <td>第1サポート: 11,840下 (-223,788)<br>第2サポート: 16,338下 (-228,286)<br>第3サポート: 23,902下 (-235,850)<br>第4サポート: 28,405下 (-240,353)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="110"><a href="images/110.png" target="_blank">110</a></td>
+          <td data-sort="56.9286">56.9%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>順張り寄り</td>
+          <td data-sort="317808.0000">317,808</td>
+          <td>陽線1連続後 / n=35</td>
+          <td>第1サポート: 25,559下 (292,249)<br>第2サポート: 31,300下 (286,508)<br>第3サポート: 50,148下 (267,660)<br>第4サポート: 53,235下 (264,573)<br>最重要サポート: 56,832下 (260,976)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="76"><a href="images/76.png" target="_blank">76</a></td>
+          <td data-sort="55.5000">55.5%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-230449.0000">-230,449</td>
+          <td>陽線2連続後 / n=28</td>
+          <td>第1サポート: 3,951下 (-234,400)<br>第2サポート: 8,050下 (-238,499)<br>第3サポート: 15,091下 (-245,540)<br>第4サポート: 22,275下 (-252,724)<br>最重要サポート: 26,029下 (-256,478)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="134"><a href="images/134.png" target="_blank">134</a></td>
+          <td data-sort="55.5000">55.5%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>順張り寄り</td>
+          <td data-sort="-212361.0000">-212,361</td>
+          <td>陽線2連続後 / n=10</td>
+          <td>第1サポート: 24,275下 (-236,636)<br>第2サポート: 28,123下 (-240,484)<br>第3サポート: 31,889下 (-244,250)<br>第4サポート: 39,419下 (-251,780)<br>最重要サポート: 46,687下 (-259,048)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="68"><a href="images/68.png" target="_blank">68</a></td>
+          <td data-sort="54.4412">54.4%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-82521.0000">-82,521</td>
+          <td>陽線3連続後 / n=17</td>
+          <td>第1サポート: 2,969下 (-85,490)<br>第2サポート: 16,506下 (-99,027)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="70"><a href="images/70.png" target="_blank">70</a></td>
+          <td data-sort="53.8256">53.8%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="61761.0000">61,761</td>
+          <td>陰線1連続後 / n=86</td>
+          <td>第1サポート: 4,633下 (57,128)<br>第2サポート: 13,944下 (47,817)<br>第3サポート: 19,708下 (42,053)<br>第4サポート: 22,788下 (38,973)<br>最重要サポート: 30,656下 (31,105)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="39"><a href="images/39.png" target="_blank">39</a></td>
+          <td data-sort="53.3261">53.3%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-65998.0000">-65,998</td>
+          <td>陽線1連続後 / n=69</td>
+          <td>第1サポート: 12,153下 (-78,151)<br>第2サポート: 26,230下 (-92,228)<br>第3サポート: 29,388下 (-95,386)<br>第4サポート: 35,244下 (-101,242)<br>最重要サポート: 39,287下 (-105,285)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="69"><a href="images/69.png" target="_blank">69</a></td>
+          <td data-sort="52.9286">52.9%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="297954.0000">297,954</td>
+          <td>陽線2連続後 / n=35</td>
+          <td>第1サポート: 1,856下 (296,098)<br>第2サポート: 5,293下 (292,661)<br>第3サポート: 8,366下 (289,588)<br>第4サポート: 12,114下 (285,840)<br>最重要サポート: 14,939下 (283,015)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="148"><a href="images/148.png" target="_blank">148</a></td>
+          <td data-sort="51.6429">51.6%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-494845.0000">-494,845</td>
+          <td>陰線5連続後 / n=7</td>
+          <td>第1サポート: 10,893下 (-505,738)<br>第2サポート: 25,926下 (-520,771)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="116"><a href="images/116.png" target="_blank">116</a></td>
+          <td data-sort="49.1667">49.2%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-200459.0000">-200,459</td>
+          <td>陽線1連続後 / n=30</td>
+          <td>第1サポート: 9,715下 (-210,174)<br>第2サポート: 15,036下 (-215,495)<br>第3サポート: 27,339下 (-227,798)<br>第4サポート: 42,884下 (-243,343)<br>最重要サポート: 45,927下 (-246,386)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="48"><a href="images/48.png" target="_blank">48</a></td>
+          <td data-sort="48.8684">48.9%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-356457.0000">-356,457</td>
+          <td>陽線1連続後 / n=76</td>
+          <td>第1サポート: 5,790下 (-362,247)<br>第2サポート: 14,889下 (-371,346)<br>第3サポート: 19,279下 (-375,736)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="129"><a href="images/129.png" target="_blank">129</a></td>
+          <td data-sort="48.7432">48.7%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="29969.0000">29,969</td>
+          <td>陽線1連続後 / n=37</td>
+          <td>第1サポート: 14,538下 (15,431)<br>第2サポート: 24,956下 (5,013)<br>第3サポート: 32,381下 (-2,412)<br>第4サポート: 45,398下 (-15,429)<br>最重要サポート: 55,814下 (-25,845)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="34"><a href="images/34.png" target="_blank">34</a></td>
+          <td data-sort="48.1329">48.1%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-86652.0000">-86,652</td>
+          <td>陰線1連続後 / n=79</td>
+          <td>第1サポート: 2,342下 (-88,994)<br>第2サポート: 7,260下 (-93,912)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="75"><a href="images/75.png" target="_blank">75</a></td>
+          <td data-sort="47.8529">47.9%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-8798.0000">-8,798</td>
+          <td>陽線1連続後 / n=85</td>
+          <td>第1サポート: 4,097下 (-12,895)<br>第2サポート: 8,907下 (-17,705)<br>第3サポート: 14,076下 (-22,874)<br>第4サポート: 18,258下 (-27,056)<br>最重要サポート: 22,332下 (-31,130)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="61"><a href="images/61.png" target="_blank">61</a></td>
+          <td data-sort="47.7535">47.8%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-13336.0000">-13,336</td>
+          <td>陽線1連続後 / n=71</td>
+          <td>第1サポート: 5,443下 (-18,779)<br>第2サポート: 9,576下 (-22,912)<br>第3サポート: 20,083下 (-33,419)<br>第4サポート: 25,188下 (-38,524)<br>最重要サポート: 32,195下 (-45,531)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="42"><a href="images/42.png" target="_blank">42</a></td>
+          <td data-sort="47.6538">47.7%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="121242.0000">121,242</td>
+          <td>陽線3連続後 / n=13</td>
+          <td>第1サポート: 3,835下 (117,407)<br>第2サポート: 19,878下 (101,364)<br>第3サポート: 29,813下 (91,429)<br>第4サポート: 42,595下 (78,647)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="47"><a href="images/47.png" target="_blank">47</a></td>
+          <td data-sort="47.0714">47.1%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-203139.0000">-203,139</td>
+          <td>陽線1連続後 / n=70</td>
+          <td>第1サポート: 3,647下 (-206,786)<br>第2サポート: 7,217下 (-210,356)<br>第3サポート: 12,096下 (-215,235)<br>第4サポート: 16,559下 (-219,698)<br>最重要サポート: 26,311下 (-229,450)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="158"><a href="images/158.png" target="_blank">158</a></td>
+          <td data-sort="46.9545">47.0%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="56047.0000">56,047</td>
+          <td>陰線後 / n=11</td>
+          <td>第1サポート: 5,645下 (50,402)<br>第2サポート: 12,303下 (43,744)<br>第3サポート: 19,536下 (36,511)<br>第4サポート: 26,294下 (29,753)<br>最重要サポート: 29,831下 (26,216)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="52"><a href="images/52.png" target="_blank">52</a></td>
+          <td data-sort="45.5000">45.5%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-275553.0000">-275,553</td>
+          <td>陰線1連続後 / n=70</td>
+          <td>第1サポート: 4,066下 (-279,619)<br>第2サポート: 14,745下 (-290,298)<br>第3サポート: 17,608下 (-293,161)<br>第4サポート: 29,048下 (-304,601)<br>最重要サポート: 31,736下 (-307,289)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="67"><a href="images/67.png" target="_blank">67</a></td>
+          <td data-sort="45.2500">45.2%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-471983.0000">-471,983</td>
+          <td>陰線2連続後 / n=48</td>
+          <td>第1サポート: 2,459下 (-474,442)<br>第2サポート: 7,319下 (-479,302)<br>第3サポート: 18,604下 (-490,587)<br>第4サポート: 27,954下 (-499,937)<br>最重要サポート: 33,599下 (-505,582)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="35"><a href="images/35.png" target="_blank">35</a></td>
+          <td data-sort="45.1667">45.2%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>反発狙い</td>
+          <td data-sort="-78830.0000">-78,830</td>
+          <td>陰線3連続後 / n=30</td>
+          <td>第1サポート: 1,690下 (-80,520)<br>第2サポート: 7,004下 (-85,834)<br>第3サポート: 14,553下 (-93,383)<br>第4サポート: 17,902下 (-96,732)<br>最重要サポート: 21,780下 (-100,610)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="60"><a href="images/60.png" target="_blank">60</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-405552.0000">-405,552</td>
+          <td>陰線5連続後 / n=16</td>
+          <td>第1サポート: 1,808下 (-407,360)<br>第2サポート: 5,258下 (-410,810)<br>第3サポート: 10,189下 (-415,741)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="113"><a href="images/113.png" target="_blank">113</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="99941.0000">99,941</td>
+          <td>陰線3連続後 / n=6</td>
+          <td>第1サポート: 94下 (99,847)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="118"><a href="images/118.png" target="_blank">118</a></td>
+          <td data-sort="44.5000">44.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-75254.0000">-75,254</td>
+          <td>陰線3連続後 / n=14</td>
+          <td>第1サポート: 13,402下 (-88,656)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="57"><a href="images/57.png" target="_blank">57</a></td>
+          <td data-sort="44.0542">44.1%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-3729.0000">-3,729</td>
+          <td>陰線1連続後 / n=83</td>
+          <td>第1サポート: 2,917下 (-6,646)<br>第2サポート: 8,110下 (-11,839)<br>第3サポート: 11,366下 (-15,095)<br>第4サポート: 25,419下 (-29,148)<br>最重要サポート: 29,049下 (-32,778)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="38"><a href="images/38.png" target="_blank">38</a></td>
+          <td data-sort="43.9253">43.9%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-255829.0000">-255,829</td>
+          <td>陰線後 / n=174</td>
+          <td>第1サポート: 188下 (-256,017)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="109"><a href="images/109.png" target="_blank">109</a></td>
+          <td data-sort="43.8333">43.8%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-133015.0000">-133,015</td>
+          <td>陽線後 / n=60</td>
+          <td>第1サポート: 7,793下 (-140,808)<br>第2サポート: 28,307下 (-161,322)<br>第3サポート: 46,370下 (-179,385)<br>第4サポート: 53,509下 (-186,524)<br>最重要サポート: 60,360下 (-193,375)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="63"><a href="images/63.png" target="_blank">63</a></td>
+          <td data-sort="43.6220">43.6%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-98890.0000">-98,890</td>
+          <td>陰線1連続後 / n=82</td>
+          <td>第1サポート: 3,545下 (-102,435)<br>第2サポート: 10,726下 (-109,616)<br>第3サポート: 16,876下 (-115,766)<br>第4サポート: 25,144下 (-124,034)<br>最重要サポート: 33,392下 (-132,282)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="137"><a href="images/137.png" target="_blank">137</a></td>
+          <td data-sort="43.4130">43.4%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-412404.0000">-412,404</td>
+          <td>陰線後 / n=92</td>
+          <td>第1サポート: 272下 (-412,676)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="117"><a href="images/117.png" target="_blank">117</a></td>
+          <td data-sort="42.6860">42.7%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="9038.0000">9,038</td>
+          <td>陽線1連続後 / n=43</td>
+          <td>第1サポート: 9,211下 (-173)<br>第2サポート: 11,925下 (-2,887)<br>第3サポート: 18,780下 (-9,742)<br>第4サポート: 24,127下 (-15,089)<br>最重要サポート: 48,820下 (-39,782)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="50"><a href="images/50.png" target="_blank">50</a></td>
+          <td data-sort="41.8636">41.9%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-197926.0000">-197,926</td>
+          <td>陰線1連続後 / n=77</td>
+          <td>第1サポート: 2,388下 (-200,314)<br>第2サポート: 5,642下 (-203,568)<br>第3サポート: 12,391下 (-210,317)<br>第4サポート: 16,508下 (-214,434)<br>最重要サポート: 22,838下 (-220,764)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="153"><a href="images/153.png" target="_blank">153</a></td>
+          <td data-sort="41.5588">41.6%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>中立</td>
+          <td data-sort="244556.0000">244,556</td>
+          <td>陽線2連続後 / n=17</td>
+          <td>第1サポート: 2,873下 (241,683)<br>第2サポート: 8,968下 (235,588)<br>第3サポート: 13,608下 (230,948)<br>第4サポート: 20,687下 (223,869)<br>最重要サポート: 47,038下 (197,518)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="122"><a href="images/122.png" target="_blank">122</a></td>
+          <td data-sort="41.0347">41.0%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い</td>
+          <td data-sort="-176918.0000">-176,918</td>
+          <td>陰線後 / n=101</td>
+          <td>第1サポート: 8,173下 (-185,091)<br>第2サポート: 12,865下 (-189,783)<br>第3サポート: 17,864下 (-194,782)<br>第4サポート: 32,119下 (-209,037)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="65"><a href="images/65.png" target="_blank">65</a></td>
+          <td data-sort="40.8077">40.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・弱トレンド</td>
+          <td data-sort="-278516.0000">-278,516</td>
+          <td>陰線3連続後 / n=26</td>
+          <td>第1サポート: 3,490下 (-282,006)<br>第2サポート: 11,059下 (-289,575)<br>第3サポート: 15,738下 (-294,254)<br>第4サポート: 22,877下 (-301,393)<br>最重要サポート: 33,176下 (-311,692)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="40"><a href="images/40.png" target="_blank">40</a></td>
+          <td data-sort="40.7941">40.8%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="126208.0000">126,208</td>
+          <td>陽線3連続後 / n=17</td>
+          <td>第1サポート: 5,730下 (120,478)<br>第2サポート: 13,490下 (112,718)<br>第3サポート: 19,562下 (106,646)<br>第4サポート: 32,390下 (93,818)<br>最重要サポート: 36,717下 (89,491)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="77"><a href="images/77.png" target="_blank">77</a></td>
+          <td data-sort="40.2826">40.3%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-354790.0000">-354,790</td>
+          <td>陰線2連続後 / n=46</td>
+          <td>第1サポート: 2,586下 (-357,376)<br>第2サポート: 5,439下 (-360,229)<br>第3サポート: 12,012下 (-366,802)<br>第4サポート: 19,175下 (-373,965)<br>最重要サポート: 29,024下 (-383,814)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="55"><a href="images/55.png" target="_blank">55</a></td>
+          <td data-sort="39.8333">39.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-149858.0000">-149,858</td>
+          <td>陽線1連続後 / n=75</td>
+          <td>第1サポート: 10,700下 (-160,558)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="114"><a href="images/114.png" target="_blank">114</a></td>
+          <td data-sort="39.7857">39.8%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-122623.0000">-122,623</td>
+          <td>陽線1連続後 / n=35</td>
+          <td>第1サポート: 2,931下 (-125,554)<br>第2サポート: 15,795下 (-138,418)<br>第3サポート: 25,626下 (-148,249)<br>第4サポート: 28,659下 (-151,282)<br>最重要サポート: 36,294下 (-158,917)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="131"><a href="images/131.png" target="_blank">131</a></td>
+          <td data-sort="39.6463">39.6%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="40743.0000">40,743</td>
+          <td>陽線1連続後 / n=41</td>
+          <td>第1サポート: 2,137下 (38,606)<br>第2サポート: 7,721下 (33,022)<br>第3サポート: 11,464下 (29,279)<br>第4サポート: 14,661下 (26,082)<br>最重要サポート: 23,359下 (17,384)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="130"><a href="images/130.png" target="_blank">130</a></td>
+          <td data-sort="38.8333">38.8%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-90561.0000">-90,561</td>
+          <td>陽線2連続後 / n=15</td>
+          <td>第1サポート: 19,446下 (-110,007)<br>第2サポート: 22,300下 (-112,861)<br>第3サポート: 31,735下 (-122,296)<br>第4サポート: 41,392下 (-131,953)<br>最重要サポート: 52,431下 (-142,992)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="121"><a href="images/121.png" target="_blank">121</a></td>
+          <td data-sort="38.2959">38.3%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>反発狙い</td>
+          <td data-sort="1074.0000">1,074</td>
+          <td>陰線後 / n=98</td>
+          <td>第1サポート: 3,014下 (-1,940)<br>第2サポート: 10,122下 (-9,048)<br>第3サポート: 19,440下 (-18,366)<br>第4サポート: 22,096下 (-21,022)<br>最重要サポート: 29,663下 (-28,589)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="51"><a href="images/51.png" target="_blank">51</a></td>
+          <td data-sort="37.5233">37.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-7848.0000">-7,848</td>
+          <td>陰線後 / n=172</td>
+          <td>第1サポート: 5,238下 (-13,086)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="72"><a href="images/72.png" target="_blank">72</a></td>
+          <td data-sort="37.0263">37.0%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="214744.0000">214,744</td>
+          <td>陰線1連続後 / n=76</td>
+          <td>第1サポート: 6,311下 (208,433)<br>第2サポート: 11,151下 (203,593)<br>第3サポート: 18,589下 (196,155)<br>第4サポート: 21,503下 (193,241)<br>最重要サポート: 25,193下 (189,551)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="58"><a href="images/58.png" target="_blank">58</a></td>
+          <td data-sort="36.5290">36.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-436874.0000">-436,874</td>
+          <td>陰線1連続後 / n=69</td>
+          <td>第1サポート: 6,191下 (-443,065)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="43"><a href="images/43.png" target="_blank">43</a></td>
+          <td data-sort="35.8333">35.8%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-115161.0000">-115,161</td>
+          <td>陽線1連続後 / n=81</td>
+          <td>第1サポート: 3,279下 (-118,440)<br>第2サポート: 7,867下 (-123,028)<br>第3サポート: 10,939下 (-126,100)<br>第4サポート: 16,664下 (-131,825)<br>最重要サポート: 21,374下 (-136,535)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="74"><a href="images/74.png" target="_blank">74</a></td>
+          <td data-sort="35.3840">35.4%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-78533.0000">-78,533</td>
+          <td>陰線後 / n=181</td>
+          <td>第1サポート: 3,215下 (-81,748)<br>第2サポート: 9,289下 (-87,822)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="64"><a href="images/64.png" target="_blank">64</a></td>
+          <td data-sort="35.2407">35.2%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-218966.0000">-218,966</td>
+          <td>陽線1連続後 / n=81</td>
+          <td>第1サポート: 4,403下 (-223,369)<br>第2サポート: 10,012下 (-228,978)<br>第3サポート: 14,800下 (-233,766)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="147"><a href="images/147.png" target="_blank">147</a></td>
+          <td data-sort="35.0000">35.0%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-164513.0000">-164,513</td>
+          <td>陰線2連続後 / n=32</td>
+          <td>第1サポート: 6,629下 (-171,142)<br>第2サポート: 13,719下 (-178,232)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="128"><a href="images/128.png" target="_blank">128</a></td>
+          <td data-sort="34.8333">34.8%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-281838.0000">-281,838</td>
+          <td>陰線1連続後 / n=42</td>
+          <td>第1サポート: 21,663下 (-303,501)<br>第2サポート: 41,094下 (-322,932)<br>第3サポート: 51,494下 (-333,332)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="45"><a href="images/45.png" target="_blank">45</a></td>
+          <td data-sort="34.7174">34.7%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-250723.0000">-250,723</td>
+          <td>陰線後 / n=184</td>
+          <td>第1サポート: 95下 (-250,818)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="59"><a href="images/59.png" target="_blank">59</a></td>
+          <td data-sort="34.5000">34.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-366697.0000">-366,697</td>
+          <td>陰線1連続後 / n=80</td>
+          <td>第1サポート: 6,471下 (-373,168)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="154"><a href="images/154.png" target="_blank">154</a></td>
+          <td data-sort="34.5000">34.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-165780.0000">-165,780</td>
+          <td>陰線後 / n=15</td>
+          <td>第1サポート: 1,943下 (-167,723)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="136"><a href="images/136.png" target="_blank">136</a></td>
+          <td data-sort="34.0000">34.0%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-356766.0000">-356,766</td>
+          <td>陰線1連続後 / n=40</td>
+          <td>第1サポート: 15,509下 (-372,275)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="36"><a href="images/36.png" target="_blank">36</a></td>
+          <td data-sort="33.5244">33.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-108866.0000">-108,866</td>
+          <td>陰線1連続後 / n=82</td>
+          <td>第1サポート: 3,725下 (-112,591)<br>第2サポート: 7,139下 (-116,005)<br>第3サポート: 13,390下 (-122,256)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="53"><a href="images/53.png" target="_blank">53</a></td>
+          <td data-sort="33.0679">33.1%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="-30918.0000">-30,918</td>
+          <td>陽線1連続後 / n=81</td>
+          <td>第1サポート: 1,594下 (-32,512)<br>第2サポート: 4,332下 (-35,250)<br>第3サポート: 6,856下 (-37,774)<br>第4サポート: 9,858下 (-40,776)<br>最重要サポート: 16,519下 (-47,437)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="133"><a href="images/133.png" target="_blank">133</a></td>
+          <td data-sort="32.2551">32.3%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-124096.0000">-124,096</td>
+          <td>陰線後 / n=98</td>
+          <td>第1サポート: 189下 (-124,285)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="37"><a href="images/37.png" target="_blank">37</a></td>
+          <td data-sort="32.0000">32.0%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>中立</td>
+          <td data-sort="-197802.0000">-197,802</td>
+          <td>陽線2連続後 / n=32</td>
+          <td>第1サポート: 3,357下 (-201,159)<br>第2サポート: 10,022下 (-207,824)<br>第3サポート: 18,640下 (-216,442)<br>第4サポート: 21,259下 (-219,061)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="49"><a href="images/49.png" target="_blank">49</a></td>
+          <td data-sort="32.0000">32.0%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-126220.0000">-126,220</td>
+          <td>陰線3連続後 / n=24</td>
+          <td>第1サポート: 13,537下 (-139,757)<br>第2サポート: 16,767下 (-142,987)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="46"><a href="images/46.png" target="_blank">46</a></td>
+          <td data-sort="31.9706">32.0%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-292944.0000">-292,944</td>
+          <td>陽線2連続後 / n=34</td>
+          <td>第1サポート: 15,929下 (-308,873)<br>第2サポート: 19,499下 (-312,443)<br>第3サポート: 27,278下 (-320,222)<br>第4サポート: 36,799下 (-329,743)<br>最重要サポート: 40,639下 (-333,583)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="156"><a href="images/156.png" target="_blank">156</a></td>
+          <td data-sort="31.5000">31.5%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-73148.0000">-73,148</td>
+          <td>陽線後 / n=10</td>
+          <td>第1サポート: 5,569下 (-78,717)<br>第2サポート: 16,374下 (-89,522)<br>第3サポート: 21,232下 (-94,380)<br>第4サポート: 28,807下 (-101,955)<br>最重要サポート: 45,366下 (-118,514)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="41"><a href="images/41.png" target="_blank">41</a></td>
+          <td data-sort="30.9872">31.0%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-336685.0000">-336,685</td>
+          <td>陰線1連続後 / n=78</td>
+          <td>第1サポート: 1,692下 (-338,377)<br>第2サポート: 7,043下 (-343,728)<br>第3サポート: 12,065下 (-348,750)<br>第4サポート: 16,486下 (-353,171)<br>最重要サポート: 21,155下 (-357,840)</td>
+        </tr>
+        
+
+        <tr class="rel-high">
+          <td data-sort="71"><a href="images/71.png" target="_blank">71</a></td>
+          <td data-sort="30.5323">30.5%</td>
+          <td data-sort="3"><span class="badge rel-high">高</span></td>
+          <td>中立</td>
+          <td data-sort="-185463.0000">-185,463</td>
+          <td>陽線2連続後 / n=31</td>
+          <td>第1サポート: 3,856下 (-189,319)<br>第2サポート: 9,774下 (-195,237)<br>第3サポート: 17,812下 (-203,275)<br>第4サポート: 21,127下 (-206,590)<br>最重要サポート: 34,914下 (-220,377)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="112"><a href="images/112.png" target="_blank">112</a></td>
+          <td data-sort="30.2143">30.2%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-437441.0000">-437,441</td>
+          <td>陰線3連続後 / n=14</td>
+          <td>第1サポート: 188下 (-437,629)</td>
+        </tr>
+        
+
+        <tr class="rel-mid">
+          <td data-sort="44"><a href="images/44.png" target="_blank">44</a></td>
+          <td data-sort="29.8243">29.8%</td>
+          <td data-sort="2"><span class="badge rel-mid">中</span></td>
+          <td>中立</td>
+          <td data-sort="78416.0000">78,416</td>
+          <td>陽線2連続後 / n=37</td>
+          <td>第1サポート: 2,819下 (75,597)<br>第2サポート: 6,926下 (71,490)<br>第3サポート: 10,904下 (67,512)<br>第4サポート: 13,605下 (64,811)<br>最重要サポート: 17,641下 (60,775)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="155"><a href="images/155.png" target="_blank">155</a></td>
+          <td data-sort="29.7941">29.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-239391.0000">-239,391</td>
+          <td>陰線後 / n=17</td>
+          <td>第1サポート: 273下 (-239,664)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="111"><a href="images/111.png" target="_blank">111</a></td>
+          <td data-sort="29.6648">29.7%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-498569.0000">-498,569</td>
+          <td>陰線後 / n=91</td>
+          <td>第1サポート: 272下 (-498,841)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="135"><a href="images/135.png" target="_blank">135</a></td>
+          <td data-sort="29.5515">29.6%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い</td>
+          <td data-sort="-70304.0000">-70,304</td>
+          <td>陰線後 / n=97</td>
+          <td>第1サポート: 4,965下 (-75,269)<br>第2サポート: 13,617下 (-83,921)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="146"><a href="images/146.png" target="_blank">146</a></td>
+          <td data-sort="28.5909">28.6%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-322550.0000">-322,550</td>
+          <td>陰線1連続後 / n=44</td>
+          <td>第1サポート: 188下 (-322,738)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="54"><a href="images/54.png" target="_blank">54</a></td>
+          <td data-sort="27.8333">27.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-314644.0000">-314,644</td>
+          <td>陰線1連続後 / n=75</td>
+          <td>第1サポート: 1,878下 (-316,522)<br>第2サポート: 20,376下 (-335,020)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="62"><a href="images/62.png" target="_blank">62</a></td>
+          <td data-sort="27.8333">27.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・弱トレンド</td>
+          <td data-sort="-304369.0000">-304,369</td>
+          <td>陰線5連続後 / n=6</td>
+          <td>第1サポート: 2,575下 (-306,944)<br>第2サポート: 10,264下 (-314,633)<br>第3サポート: 14,677下 (-319,046)<br>第4サポート: 31,908下 (-336,277)<br>最重要サポート: 39,419下 (-343,788)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="119"><a href="images/119.png" target="_blank">119</a></td>
+          <td data-sort="26.3182">26.3%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-413014.0000">-413,014</td>
+          <td>陰線1連続後 / n=44</td>
+          <td>第1サポート: 1,569下 (-414,583)<br>第2サポート: 4,829下 (-417,843)<br>第3サポート: 8,204下 (-421,218)<br>第4サポート: 16,995下 (-430,009)<br>最重要サポート: 21,900下 (-434,914)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="108"><a href="images/108.png" target="_blank">108</a></td>
+          <td data-sort="24.7727">24.8%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-242864.0000">-242,864</td>
+          <td>陰線2連続後 / n=22</td>
+          <td>第1サポート: 2,510下 (-245,374)<br>第2サポート: 6,812下 (-249,676)<br>第3サポート: 16,789下 (-259,653)<br>第4サポート: 25,907下 (-268,771)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="123"><a href="images/123.png" target="_blank">123</a></td>
+          <td data-sort="23.4474">23.4%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-385391.0000">-385,391</td>
+          <td>陰線1連続後 / n=38</td>
+          <td>第1サポート: 8,349下 (-393,740)<br>第2サポート: 14,204下 (-399,595)<br>第3サポート: 35,993下 (-421,384)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="150"><a href="images/150.png" target="_blank">150</a></td>
+          <td data-sort="23.1765">23.2%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-552158.0000">-552,158</td>
+          <td>陰線後 / n=136</td>
+          <td>第1サポート: 6,668下 (-558,826)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="151"><a href="images/151.png" target="_blank">151</a></td>
+          <td data-sort="20.7222">20.7%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-74160.0000">-74,160</td>
+          <td>陰線2連続後 / n=27</td>
+          <td>第1サポート: 5,157下 (-79,317)<br>第2サポート: 22,356下 (-96,516)<br>第3サポート: 27,987下 (-102,147)<br>第4サポート: 36,541下 (-110,701)<br>最重要サポート: 39,613下 (-113,773)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="115"><a href="images/115.png" target="_blank">115</a></td>
+          <td data-sort="18.1667">18.2%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-167070.0000">-167,070</td>
+          <td>陽線2連続後 / n=12</td>
+          <td>第1サポート: 2,931下 (-170,001)<br>第2サポート: 15,998下 (-183,068)<br>第3サポート: 24,699下 (-191,769)<br>第4サポート: 28,946下 (-196,016)<br>最重要サポート: 41,539下 (-208,609)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="149"><a href="images/149.png" target="_blank">149</a></td>
+          <td data-sort="16.7222">16.7%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-105239.0000">-105,239</td>
+          <td>陰線3連続後 / n=18</td>
+          <td>第1サポート: 189下 (-105,428)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="66"><a href="images/66.png" target="_blank">66</a></td>
+          <td data-sort="14.5000">14.5%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い</td>
+          <td data-sort="-193410.0000">-193,410</td>
+          <td>陰線6連続後 / n=5</td>
+          <td>第1サポート: 2,860下 (-196,270)<br>第2サポート: 13,611下 (-207,021)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="152"><a href="images/152.png" target="_blank">152</a></td>
+          <td data-sort="11.1667">11.2%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-60518.0000">-60,518</td>
+          <td>陰線5連続後 / n=6</td>
+          <td>第1サポート: 188下 (-60,706)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="157"><a href="images/157.png" target="_blank">157</a></td>
+          <td data-sort="7.8333">7.8%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-147476.0000">-147,476</td>
+          <td>陰線後 / n=15</td>
+          <td>第1サポート: 272下 (-147,748)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="56"><a href="images/56.png" target="_blank">56</a></td>
+          <td data-sort="5.0000">5.0%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>反発狙い・要注意</td>
+          <td data-sort="-62715.0000">-62,715</td>
+          <td>陰線4連続後 / n=10</td>
+          <td>第1サポート: 21,132下 (-83,847)</td>
+        </tr>
+        
+
+        <tr class="rel-lowmid">
+          <td data-sort="120"><a href="images/120.png" target="_blank">120</a></td>
+          <td data-sort="5.0000">5.0%</td>
+          <td data-sort="1"><span class="badge rel-lowmid">低〜中</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-98085.0000">-98,085</td>
+          <td>陽線2連続後 / n=12</td>
+          <td>第1サポート: 6,552下 (-104,637)<br>第2サポート: 9,976下 (-108,061)<br>第3サポート: 31,077下 (-129,162)</td>
+        </tr>
+        
+
+        <tr class="rel-low">
+          <td data-sort="132"><a href="images/132.png" target="_blank">132</a></td>
+          <td data-sort="5.0000">5.0%</td>
+          <td data-sort="0"><span class="badge rel-low">低</span></td>
+          <td>弱トレンド</td>
+          <td data-sort="-221814.0000">-221,814</td>
+          <td>陰線2連続後 / n=22</td>
+          <td>第1サポート: 9,624下 (-231,438)<br>第2サポート: 13,672下 (-235,486)<br>第3サポート: 18,427下 (-240,241)</td>
+        </tr>
+        
+  </tbody>
+</table>
+
+<p class="note">
+  ※ランキング順は陽線確率のままです。信頼度は、サンプル数・MA位置・MA傾き・直近方向・陰線連続後の反発狙いかどうかで判定しています。
+</p>
+
+<script>
+let sortState = {};
+
+function getCellValue(row, col) {
+  const cell = row.children[col];
+  const sortValue = cell.getAttribute("data-sort");
+  return sortValue !== null ? sortValue : cell.innerText;
+}
+
+function sortTable(col, type) {
+  const table = document.getElementById("rankTable");
+  const tbody = table.tBodies[0];
+  const rows = Array.from(tbody.rows);
+
+  const key = col + "_" + type;
+  const asc = !sortState[key];
+  sortState = {};
+  sortState[key] = asc;
+
+  rows.sort((a, b) => {
+    let av = getCellValue(a, col);
+    let bv = getCellValue(b, col);
+
+    if (type === "num") {
+      av = parseFloat(String(av).replace(/,/g, "").replace("%", ""));
+      bv = parseFloat(String(bv).replace(/,/g, "").replace("%", ""));
+      if (isNaN(av)) av = -Infinity;
+      if (isNaN(bv)) bv = -Infinity;
+      return asc ? av - bv : bv - av;
+    }
+
+    return asc
+      ? String(av).localeCompare(String(bv), "ja")
+      : String(bv).localeCompare(String(av), "ja");
+  });
+
+  rows.forEach(row => tbody.appendChild(row));
+}
+</script>
+</body>
+</html>
